@@ -28,12 +28,12 @@ import jakarta.validation.constraints.Size;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
-	@Column(length = 30)
+	@Column(name = "first_name", length = 30)
 	@Size(max = 30)
 	@NotBlank
 	private String firstName;
 
-	@Column(length = 30)
+	@Column(name = "last_name", length = 30)
 	@Size(max = 30)
 	@NotBlank
 	private String lastName;

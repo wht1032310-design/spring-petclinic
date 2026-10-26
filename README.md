@@ -35,6 +35,15 @@ With Gradle, the command is as follows:
 
 You can then access the Petclinic at <http://localhost:8080/>.
 
+## Practice changes
+
+This practice branch uses EclipseLink as the JPA provider while keeping the Spring Data
+JPA repositories and entity model. The provider setup is in
+`EclipseLinkJpaConfiguration`.
+
+The **Clinic overview** page at <http://localhost:8080/clinic/overview> shows live counts
+for owners, pets, visits, and veterinarians from the configured database.
+
 <img width="1042" alt="petclinic-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
 
 You can, of course, run Petclinic in your favorite IDE.

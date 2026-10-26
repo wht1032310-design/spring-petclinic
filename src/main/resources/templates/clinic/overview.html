@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'clinic')}">
+
+<body>
+
+  <h2 th:text="#{clinicOverview}">Clinic overview</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <h3 th:text="#{owners}">Owners</h3>
+      <p class="display-6" th:text="${ownerCount}">0</p>
+    </div>
+    <div class="col-md-3">
+      <h3 th:text="#{pets}">Pets</h3>
+      <p class="display-6" th:text="${petCount}">0</p>
+    </div>
+    <div class="col-md-3">
+      <h3 th:text="#{previousVisits}">Visits</h3>
+      <p class="display-6" th:text="${visitCount}">0</p>
+    </div>
+    <div class="col-md-3">
+      <h3 th:text="#{vets}">Veterinarians</h3>
+      <p class="display-6" th:text="${vetCount}">0</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -25,7 +25,8 @@ import org.springframework.context.annotation.ImportRuntimeHints;
  *
  * @author Dave Syer
  */
-@SpringBootApplication
+@SpringBootApplication(excludeName = { "org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration",
+		"org.springframework.boot.data.jpa.autoconfigure.DataJpaRepositoriesAutoConfiguration" })
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
 public class PetClinicApplication {
 
